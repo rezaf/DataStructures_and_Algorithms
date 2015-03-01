@@ -39,7 +39,7 @@ class IntHashSet
     buckets[value_hash(value) % buckets.length]
   end
 
-  # Modify this method to accomodate data types other than integers. 
+  # Modify this hash function to adapt IntHashSet for other data types.
   def value_hash(value)
     value
   end
