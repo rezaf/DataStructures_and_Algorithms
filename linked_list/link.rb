@@ -7,9 +7,7 @@ class Link
   end
 
   def insert_left(link)
-    unless link.is_detached?
-      raise "Trying to insert a link that is not detached!"
-    end
+    ensure_detached
 
     link.next = self
     link.prev = self.prev
@@ -20,9 +18,7 @@ class Link
   end
 
   def insert_right(link)
-    unless link.is_detached
-      raise "Trying to insert a link that is not detached!"
-    end
+    ensure_detached
 
     link.next = self.next
     link.prev = self
@@ -30,10 +26,6 @@ class Link
     self.next = link
 
     nil
-  end
-
-  def is_detached?
-    !(self.next || self.prev)
   end
 
   def remove
@@ -45,4 +37,10 @@ class Link
 
   protected
   attr_writer :prev, :next
+
+  def ensure_detached
+    if (self.next || self.prev)
+      raise "Trying to insert a link that is not detached!"
+    end
+  end
 end

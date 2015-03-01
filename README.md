@@ -1,7 +1,7 @@
-# DataStructures and Algorithms
+# Data Structures and Algorithms
 Ruby implementations of important data structures and algorithms.
 
 * Static Arrays
 * Dynamic Arrays
 * Hash Sets
-* Linked List
+* Linked Lists
