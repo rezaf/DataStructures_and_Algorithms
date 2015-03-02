@@ -9,7 +9,7 @@ class SentinelLink < Link
   def prev=(link)
     if side == :last
       return super(link)
-    else
+    elsif link
       raise "Can't set prev of first sentinel!"
     end
   end
@@ -17,7 +17,7 @@ class SentinelLink < Link
   def next=(link)
     if side == :first
       return super(link)
-    else
+    elsif link
       raise "Can't set next of last sentinel!"
     end
   end

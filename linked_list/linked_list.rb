@@ -2,8 +2,8 @@ require_relative 'sentinel_link'
 
 class LinkedList
   def initialize
-    self.first = SentinelLink(:first)
-    self.last = SentinelLink(:last)
+    self.first = SentinelLink.new(:first)
+    self.last = SentinelLink.new(:last)
 
     self.first.insert_right(self.last)
   end
@@ -60,7 +60,7 @@ class LinkedList
   end
 
   def unshift(value)
-    unshift_link.value
+    unshift_link(Link.new(value))
   end
 
   def unshift_link(link)
