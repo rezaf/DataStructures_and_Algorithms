@@ -5,3 +5,4 @@ Ruby implementations of important data structures and algorithms.
 * Dynamic Arrays
 * Hash Sets
 * Linked Lists
+* Binary Heaps
