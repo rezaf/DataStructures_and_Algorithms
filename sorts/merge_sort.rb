@@ -1,3 +1,4 @@
+# Time always O(nlog(n)), Space O(n)
 def merge_sort(arr)
   return arr if arr.length < 2
 
