@@ -6,3 +6,5 @@ Ruby implementations of important data structures and algorithms.
 * Hash Sets
 * Linked Lists
 * Binary Heaps
+* Sorting algorithms
+  * Bubble Sort
