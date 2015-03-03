@@ -44,7 +44,7 @@ class BinaryMinHeap
   end
 
   def self.heapify_down(arr, parent_idx, len = arr.length)
-    left_child_idx, right_child_idx = arr.child_indices(len, parent_idx)
+    left_child_idx, right_child_idx = child_indices(len, parent_idx)
 
     parent_val = arr[parent_idx]
 
