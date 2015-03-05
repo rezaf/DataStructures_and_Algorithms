@@ -12,3 +12,4 @@ Ruby implementations of important data structures and algorithms.
   * Quick Sort
   * Heap Sort
   * Selection Sort
+  * Insertion Sort
