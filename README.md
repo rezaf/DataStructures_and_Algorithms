@@ -7,9 +7,9 @@ Ruby implementations of important data structures and algorithms.
 * Linked Lists
 * Binary Heaps
 * Sorting Algorithms
+  * Selection Sort
+  * Insertion Sort
   * Bubble Sort
   * Merge Sort
   * Quick Sort
   * Heap Sort
-  * Selection Sort
-  * Insertion Sort
