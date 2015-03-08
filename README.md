@@ -6,6 +6,7 @@ Ruby implementations of important data structures and algorithms.
 * Hash Sets
 * Linked Lists
 * Binary Heaps
+* Priority Maps
 * Sorting Algorithms
   * Selection Sort
   * Insertion Sort
@@ -18,3 +19,4 @@ Ruby implementations of important data structures and algorithms.
   * Directed Graphs
   * Breadth First Search
   * Depth First Search
+  * Dijkstra's Shortest Path
