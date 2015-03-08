@@ -13,3 +13,6 @@ Ruby implementations of important data structures and algorithms.
   * Merge Sort
   * Quick Sort
   * Heap Sort
+* Graphs
+  * Undirected Graphs
+  * Directed Graphs
