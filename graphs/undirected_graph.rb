@@ -9,24 +9,20 @@ class Vertex
 end
 
 class Edge
-  attr_reader :vertex_v, :vertex_w, :cost
+  attr_reader :vertices
 
-  def initialize(vertex_v, vertex_w, cost = 1)
-    self.vertex_v = vertex_v
-    self.vertex_w = vertex_w
-    self.cost = cost
-
-    vertex_v.edges << self
-    vertex_w.edges << self
+  def initialize(vertices)
+    self.vertices = vertices
+    self.vertices.each { |vertex| vertex.edges << self }
   end
 
   def destroy!
-    self.vertex_v.edges.delete(self)
-    self.vertex_v = nil
-    self.vertex_w.edges.delete(self)
-    self.vertex_w = nil
+    self.vertices.each do |vertex|
+      vertex.edges.delete(self)
+      vertex = nil
+    end
   end
 
   protected
-  attr_writer :vertex_v, :vertex_w, :cost
+  attr_writer :vertices
 end
