@@ -1,13 +1,11 @@
-def dfs(node, target = nil, &prc)
-  raise 'Need a proc or target!' if [target, prc].none?
-  prc ||= Proc.new { |node| node.value == target }
+def dfs(vertex)
+  vertex.discovered = true
 
-  return node if prc.call(node)
+  vertex.edges.each do |edge|
+    other_vertex = edge.vertices.select do |test_vertex|
+      test_vertex != vertex
+    end
 
-  node.children.each do |child|
-    result = dfs(child, target, &prc)
-    return result unless result.nil?
+    dfs(other_vertex) unless other_vertex.discovered
   end
-
-  nil
 end
