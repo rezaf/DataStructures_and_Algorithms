@@ -16,3 +16,5 @@ Ruby implementations of important data structures and algorithms.
 * Graphs
   * Undirected Graphs
   * Directed Graphs
+  * Breadth First Search
+  * Depth First Search
