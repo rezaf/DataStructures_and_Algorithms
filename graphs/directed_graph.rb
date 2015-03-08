@@ -1,10 +1,11 @@
 class Vertex
-  attr_reader :value, :in_edges, :out_edges
+  attr_reader :value, :in_edges, :out_edges, :discovered
 
   def initialize(value)
     @value = value
     @in_edges = []
     @out_edges = []
+    @discovered = false
   end
 end
 
