@@ -20,3 +20,4 @@ Ruby implementations of important data structures and algorithms.
   * Breadth First Search
   * Depth First Search
   * Dijkstra's Shortest Path
+* AVL Balanced Binary Search Trees
