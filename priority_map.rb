@@ -3,7 +3,7 @@ require_relative 'bin_min_map'
 class PriorityMap
   def initialize
     self.map = {}
-    self.queue = BinMinMap.new
+    self.queue = BinMinHeap.new
   end
 
   def [](key)
