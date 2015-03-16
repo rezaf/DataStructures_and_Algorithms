@@ -52,7 +52,7 @@ class LinkedList
   end
 
   def shift_link
-    raise "Can't pop from empty list!" if empty?
+    raise "Can't shift from empty list!" if empty?
 
     link = first.next
     link.remove

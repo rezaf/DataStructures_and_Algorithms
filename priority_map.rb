@@ -1,4 +1,4 @@
-require_relative 'bin_min_map'
+require_relative 'bin_min_heap'
 
 class PriorityMap
   def initialize
