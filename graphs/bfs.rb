@@ -6,9 +6,7 @@ def bfs(vertex)
     vertex = queue.shift
 
     vertex.edges.each do |edge|
-      other_vertex = edge.vertices.select do |test_vertex|
-        test_vertex != vertex
-      end
+      other_vertex = edge.vertices.select { |v| v != vertex }
 
       unless other_vertex.discovered
         queue << other_vertex
